@@ -8,7 +8,7 @@ public class Devices {
     public static let shared = Devices()
     
     /** Метод получения модели устройства */
-    func deviceModel() -> String {
+    public func deviceModel() -> String {
         var iPhoneModel = ""
         var systemInfo = utsname()
         uname(&systemInfo)
