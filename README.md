@@ -23,3 +23,9 @@
 dependencies: [
     .package(url: "https://github.com/yourusername/Devices.git", from: "1.0.0")
 ]
+
+## Использование
+import Devices
+
+let deviceModel = Devices.shared.deviceModel()
+print("Модель устройства: \(deviceModel)")
