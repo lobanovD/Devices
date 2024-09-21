@@ -5,7 +5,7 @@ import Foundation
 
 class Devices {
     
-    static let shared = Devices()
+    public static let shared = Devices()
     
     /** Метод получения модели устройства */
     func deviceModel() -> String {
@@ -70,7 +70,7 @@ class Devices {
         case "iPhone15,5": return "iPhone 15 Plus"
         case "iPhone16,1": return "iPhone 15 Pro"
         case "iPhone16,2": return "iPhone 15 Pro Max"
-
+            
         case "iPod1,1": return "1st Gen iPod"
         case "iPod2,1": return "2nd Gen iPod"
         case "iPod3,1": return "3rd Gen iPod"
@@ -78,7 +78,7 @@ class Devices {
         case "iPod5,1": return "5th Gen iPod"
         case "iPod7,1": return "6th Gen iPod"
         case "iPod9,1": return "7th Gen iPod"
-
+            
         case "iPad1,1": return "iPad"
         case "iPad1,2": return "iPad 3G"
         case "iPad2,1": return "2nd Gen iPad"
@@ -133,7 +133,7 @@ class Devices {
         case "iPad13,18", "iPad13,19": return "iPad 10th Gen"
         case "iPad14,3", "iPad14,4": return "iPad Pro 11 inch 4th Gen"
         case "iPad14,5", "iPad14,6": return "iPad Pro 12.9 inch 6th Gen"
-        // Добавьте другие модели устройств по мере необходимости
+            // Добавьте другие модели устройств по мере необходимости
         default: return nil
         }
     }
