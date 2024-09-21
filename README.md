@@ -21,7 +21,7 @@
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/yourusername/Devices.git", from: "1.0.0")
+    .package(url: "https://github.com/lobanovD/Devices.git", from: "1.0.0")
 ]
 ```
 ## Использование
@@ -31,3 +31,12 @@ import Devices
 let deviceModel = Devices.shared.deviceModel()
 print("Модель устройства: \(deviceModel)")
 ```
+## Поддерживаемые модели устройств
+Пакет поддерживает следующие устройства:
+
+- iPhone (начиная с iPhone 1-го поколения и до iPhone 15 Pro Max)
+- iPod (до 7-го поколения)
+- iPad (включая все поколения и модели iPad Air, iPad mini, iPad Pro)
+
+## Лицензия
+Этот проект лицензирован под лицензией MIT. См. файл LICENSE для подробной информации.
