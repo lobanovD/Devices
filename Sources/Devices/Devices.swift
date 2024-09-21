@@ -3,7 +3,7 @@
 
 import Foundation
 
-class Devices {
+public class Devices {
     
     public static let shared = Devices()
     
