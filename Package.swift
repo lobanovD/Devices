@@ -5,6 +5,9 @@ import PackageDescription
 
 let package = Package(
     name: "Devices",
+    platforms: [
+        .iOS(.v16) // Указываем минимальную версию iOS
+    ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
