@@ -27,13 +27,13 @@ public class Devices {
     
     /** Метод преобразования кода устройства в модель **/
     private func mapToDevice(_ identifier: String) -> String? {
-        // Сначала — проверка на запуск в Симуляторе через переменные окружения Xcode
-        if let simModel = ProcessInfo.processInfo.environment["SIMULATOR_MODEL_IDENTIFIER"] {
-            // Например: "iPhone14,5" — можем преобразовать в человекочитаемое имя, рекурсивно вызвав mapToDevice
-            let deviceName = mapToDevice(simModel) ?? simModel
-            let simDeviceName = ProcessInfo.processInfo.environment["SIMULATOR_DEVICE_NAME"] ?? "Simulator"
-            return "\(deviceName) (Simulator: \(simDeviceName))"
-        }
+//        // Сначала — проверка на запуск в Симуляторе через переменные окружения Xcode
+//        if let simModel = ProcessInfo.processInfo.environment["SIMULATOR_MODEL_IDENTIFIER"] {
+//            // Например: "iPhone14,5" — можем преобразовать в человекочитаемое имя, рекурсивно вызвав mapToDevice
+//            let deviceName = mapToDevice(simModel) ?? simModel
+//            let simDeviceName = ProcessInfo.processInfo.environment["SIMULATOR_DEVICE_NAME"] ?? "Simulator"
+//            return "\(deviceName) (Simulator: \(simDeviceName))"
+//        }
 
         // Также учтём "низкоуровневые" идентификаторы симулятора, которые иногда возвращаются
         switch identifier {
